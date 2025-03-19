@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script defer src="script.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quem Descobriu o Brasil?</h1>
+    <div class="padrao" id="ida" onclick="fa()">
+        Pedro Álvares Cabral
+    </div>
+    <div class="padrao" id="volta1" onclick="sla1()">
+        Pedro Bial
+    </div>
+    <div class="padrao" id="volta2" onclick="sla2()">
+        Valeska Popozuda
+    </div>
+    <div class="padrao" id="volta3" onclick="sla3()">
+        Ana Maria Braga
+    </div>
+    <div class="padrao" id="volta4" onclick="sla4()">
+        Fausto Silva
+    </div>
+    <script>
+        function fa(){
+            var a = window.document.getElementById("ida")
+            a.innerText = 'Certa Resposta'
+            a.style.backgroundColor = "limegreen"
+        }
+        function sla1(){
+            var a = window.document.getElementById("volta1")
+            a.innerText = 'Resposta errada'
+            a.style.backgroundColor = "red"
+        }
+        function sla2(){
+            var a = window.document.getElementById("volta2")
+            a.innerText = 'Resposta errada'
+            a.style.backgroundColor = "red"
+        }
+        function sla3(){
+            var a = window.document.getElementById("volta3")
+            a.innerText = 'Resposta errada'
+            a.style.backgroundColor = "red"
+        }
+        function sla4(){
+            var a = window.document.getElementById("volta4")
+            a.innerText = 'Resposta errada'
+            a.style.backgroundColor = "red"
+        }
+    </script>
+</body>
+</html>
